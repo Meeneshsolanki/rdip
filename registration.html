@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+        Registration Form
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <table class="abovenavbar">
+        <tr>
+            <td>
+                <a href="https://www.iiit.ac.in/">
+                    <img src="images/logo.png" alt="Logo of IIIT-H" class="responsive" />
+                </a>
+            </td>
+            <td>
+                <h2 class="rdip">
+                    <a href="https://serc.iiit.ac.in/rdip"> RDIP </a>
+                </h2>
+            </td>
+        </tr>
+    </table>
+
+    <!--Navigation bar section starts-->
+    <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="registration.html">Registration Form</a></li>
+    </ul>
+    <!-- Navigation bar section ends-->
+
+    <!-- Form Starts -->
+    <form method="get">
+        <table class="form">
+            <tr>
+                <td>
+                    <label for="fname"><b>First name:</b></label>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email"><b>E-mail:</b></label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone"><b>Phone No:</b></label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender"><b>Gender:</b></label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male"><b>Male</b></label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female"><b>Female</b></label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other"><b>Other</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="reasonforRDIP"><b>Reason for RDIP:</b></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="HTML" name="HTML" value="HTML">
+                    <label for="HTML"> <b>HTML</b></label>
+                    <input type="checkbox" id="CSS" name="CSS" value="CSS">
+                    <label for="CSS"><b>CSS</b></label>
+                    <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+                    <label for="JavaScript"><b>JavaScript</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="college"><b>College:</b></label>
+                </td>
+                <td>
+                    <input type="text" id="college" name="college">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="selectcheck" name="selectcheck">
+                </td>
+                <td>
+                    <label for="selectcheck"><b>I declare above given details are true.</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" value="Submit">
+                        <a href="details.html">Submit</a>
+                    </button>
+                </td>
+                <td>
+                    <button type="reset" value="Reset">
+                        <a href="registration.html">Reset</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!-- Form Ends-->
